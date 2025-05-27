@@ -38,7 +38,7 @@ const InteractingSection = () => {
               <div>
                 <h3 className="font-semibold text-foreground mb-2 font-serif">Natural Communication</h3>
                 <p className="text-muted-foreground">
-                  Simply send messages in any channel where your character bot is present. The character will 
+                  Simply ping your bot in any channel where your character bot is present or message them in DMs. The character will 
                   respond based on their personality, memory of previous interactions, and the current context 
                   of the conversation.
                 </p>
