@@ -1,4 +1,5 @@
 
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Alert, AlertDescription } from "@/components/ui/alert";
@@ -56,7 +57,7 @@ const CreateBotSection = () => {
         <div className="grid gap-6 md:grid-cols-2">
           <Card className="border-l-4 border-l-green-500 bg-slate-800/30 border-slate-700/50">
             <CardHeader>
-              <CardTitle className="flex items-center space-x-2 text-foreground font-serif">
+              <CardTitle className="flex items-center space-x-2 text-foreground font-title">
                 <FileText className="h-5 w-5 text-green-400" />
                 <span>Custom Description</span>
               </CardTitle>
@@ -74,7 +75,7 @@ const CreateBotSection = () => {
 
           <Card className="border-l-4 border-l-blue-500 bg-slate-800/30 border-slate-700/50">
             <CardHeader>
-              <CardTitle className="flex items-center space-x-2 text-foreground font-serif">
+              <CardTitle className="flex items-center space-x-2 text-foreground font-title">
                 <Link className="h-5 w-5 text-blue-400" />
                 <span>Link</span>
               </CardTitle>
@@ -115,7 +116,7 @@ const CreateBotSection = () => {
                   <div className="flex items-start space-x-4">
                     <Icon className="h-8 w-8 text-purple-400 flex-shrink-0 mt-1" />
                     <div>
-                      <h3 className="font-semibold text-foreground mb-2 font-serif">{style.type}</h3>
+                      <h3 className="font-semibold text-foreground mb-2 font-title">{style.type}</h3>
                       <p className="text-muted-foreground mb-2">{style.description}</p>
                       <Badge variant="secondary" className="bg-purple-500/20 text-purple-300 border-purple-500/30">
                         Best for: {style.bestFor}
@@ -133,7 +134,7 @@ const CreateBotSection = () => {
         <h2 className="text-2xl font-semibold text-foreground font-serif">Step 3: Secure Token Input</h2>
         <Card className="border-l-4 border-l-red-500 bg-slate-800/30 border-slate-700/50">
           <CardHeader>
-            <CardTitle className="flex items-center space-x-2 text-foreground font-serif">
+            <CardTitle className="flex items-center space-x-2 text-foreground font-title">
               <Shield className="h-5 w-5 text-red-400" />
               <span>Security First</span>
             </CardTitle>
@@ -176,7 +177,7 @@ const CreateBotSection = () => {
             <div className="flex items-start space-x-4">
               <Zap className="h-8 w-8 text-green-400 flex-shrink-0" />
               <div>
-                <h3 className="font-semibold text-green-400 mb-2 font-serif">Automatic Deployment</h3>
+                <h3 className="font-semibold text-green-400 mb-2 font-title">Automatic Deployment</h3>
                 <p className="text-green-300">
                   Once your character information is processed and your token is validated, NarrativAI will 
                   automatically deploy your character bot. The deployment process typically takes a few moments, 
@@ -192,3 +193,4 @@ const CreateBotSection = () => {
 };
 
 export default CreateBotSection;
+

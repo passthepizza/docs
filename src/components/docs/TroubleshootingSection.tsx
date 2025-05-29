@@ -1,7 +1,6 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription } from "@/components/ui/alert";
-import { HelpCircle, AlertTriangle, RefreshCw, Brain, Zap, CheckCircle, ExternalLink } from "lucide-react";
+import { AlertTriangle, RefreshCw, Brain, Zap, CheckCircle } from "lucide-react";
 
 const TroubleshootingSection = () => {
   const commonIssues = [
@@ -56,13 +55,6 @@ const TroubleshootingSection = () => {
     "Create dedicated threads for different roleplay scenarios"
   ];
 
-  const supportResources = [
-    "Use the /info command to access support resources",
-    "Visit the NarrativAI website for additional documentation", 
-    "Contact the development team through official support channels",
-    "Check community forums for user-shared solutions"
-  ];
-
   return (
     <div className="space-y-8">
       <div className="space-y-4">
@@ -80,7 +72,7 @@ const TroubleshootingSection = () => {
             return (
               <Card key={index} className="border-l-4 border-l-red-500 bg-slate-800/30 border-slate-700/50">
                 <CardHeader>
-                  <CardTitle className="flex items-center space-x-2 text-foreground font-serif">
+                  <CardTitle className="flex items-center space-x-2 text-foreground font-title">
                     <Icon className="h-5 w-5 text-red-400" />
                     <span>{issue.title}</span>
                   </CardTitle>
@@ -102,35 +94,10 @@ const TroubleshootingSection = () => {
       </div>
 
       <div className="space-y-6">
-        <h2 className="text-2xl font-semibold text-foreground font-serif">Getting Help</h2>
-        <Card className="border-l-4 border-l-blue-500 bg-slate-800/30 border-slate-700/50">
-          <CardHeader>
-            <CardTitle className="flex items-center space-x-2 text-foreground font-serif">
-              <HelpCircle className="h-5 w-5 text-blue-400" />
-              <span>Support Resources</span>
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-muted-foreground mb-4">
-              If you encounter issues not covered in this guide:
-            </p>
-            <ul className="space-y-2">
-              {supportResources.map((resource, index) => (
-                <li key={index} className="flex items-start space-x-3">
-                  <div className="flex-shrink-0 w-2 h-2 bg-blue-400 rounded-full mt-2"></div>
-                  <span className="text-muted-foreground">{resource}</span>
-                </li>
-              ))}
-            </ul>
-          </CardContent>
-        </Card>
-      </div>
-
-      <div className="space-y-6">
         <h2 className="text-2xl font-semibold text-foreground font-serif">Best Practices</h2>
         <Card className="border-l-4 border-l-green-500 bg-slate-800/30 border-slate-700/50">
           <CardHeader>
-            <CardTitle className="flex items-center space-x-2 text-foreground font-serif">
+            <CardTitle className="flex items-center space-x-2 text-foreground font-title">
               <CheckCircle className="h-5 w-5 text-green-400" />
               <span>Optimal NarrativAI Usage</span>
             </CardTitle>
@@ -162,7 +129,7 @@ const TroubleshootingSection = () => {
       <div className="grid gap-6 md:grid-cols-2">
         <Card className="border-l-4 border-l-purple-500 bg-slate-800/30 border-slate-700/50">
           <CardHeader>
-            <CardTitle className="text-purple-400 font-serif">Diagnostic Steps</CardTitle>
+            <CardTitle className="text-purple-400 font-title">Diagnostic Steps</CardTitle>
           </CardHeader>
           <CardContent>
             <ol className="space-y-2 text-sm">
@@ -192,7 +159,7 @@ const TroubleshootingSection = () => {
 
         <Card className="border-l-4 border-l-orange-500 bg-slate-800/30 border-slate-700/50">
           <CardHeader>
-            <CardTitle className="text-orange-400 font-serif">Prevention Tips</CardTitle>
+            <CardTitle className="text-orange-400 font-title">Prevention Tips</CardTitle>
           </CardHeader>
           <CardContent>
             <ul className="space-y-2 text-sm">

@@ -1,4 +1,5 @@
 
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Alert, AlertDescription } from "@/components/ui/alert";
@@ -87,7 +88,7 @@ const ManagingBotsSection = () => {
                     <Icon className={`h-8 w-8 flex-shrink-0 ${isDestructive ? 'text-red-400' : 'text-primary'}`} />
                     <div className="flex-1">
                       <div className="flex items-center space-x-3 mb-2">
-                        <h3 className="font-semibold text-white font-serif">{option.title}</h3>
+                        <h3 className="font-semibold text-white font-title">{option.title}</h3>
                         {isDestructive && (
                           <Badge variant="destructive" className="text-xs bg-red-500/20 text-red-300 border-red-500/30">
                             Irreversible
@@ -111,7 +112,7 @@ const ManagingBotsSection = () => {
         <h2 className="text-2xl font-semibold text-white font-serif">Edit Bot Settings</h2>
         <Card className="border-l-4 border-l-green-500 bg-slate-800/30 border-slate-700/50">
           <CardHeader>
-            <CardTitle className="flex items-center space-x-2 text-white font-serif">
+            <CardTitle className="flex items-center space-x-2 text-white font-title">
               <Settings className="h-5 w-5 text-green-400" />
               <span>Configurable Settings</span>
             </CardTitle>
@@ -141,7 +142,7 @@ const ManagingBotsSection = () => {
       </Alert>
 
       <div className="bg-gradient-to-r from-primary/20 to-accent/20 border border-primary/30 rounded-lg p-6">
-        <h3 className="font-semibold text-primary mb-2 font-serif">Best Practices for Bot Management</h3>
+        <h3 className="font-semibold text-primary mb-2 font-title">Best Practices for Bot Management</h3>
         <ul className="text-white/90 space-y-1">
           <li>• Regularly check bot information to ensure configurations are up to date</li>
           <li>• Use the restart function if you notice any performance issues</li>
@@ -154,3 +155,4 @@ const ManagingBotsSection = () => {
 };
 
 export default ManagingBotsSection;
+

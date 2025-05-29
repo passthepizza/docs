@@ -1,4 +1,5 @@
 
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Brain, User, Heart, Search, TrendingUp, Terminal } from "lucide-react";
@@ -53,7 +54,7 @@ const InsightsSection = () => {
         <h2 className="text-2xl font-semibold text-foreground font-serif">Advanced Memory Systems</h2>
         <Card className="border-l-4 border-l-blue-500 bg-slate-800/30 border-slate-700/50">
           <CardHeader>
-            <CardTitle className="flex items-center space-x-2 text-foreground font-serif">
+            <CardTitle className="flex items-center space-x-2 text-foreground font-title">
               <Brain className="h-5 w-5 text-blue-400" />
               <span>Sophisticated Memory Architecture</span>
             </CardTitle>
@@ -89,7 +90,7 @@ const InsightsSection = () => {
                   <div className="flex items-start space-x-3">
                     <User className="h-5 w-5 text-green-400 flex-shrink-0 mt-0.5" />
                     <div>
-                      <h4 className="font-semibold text-foreground font-serif">{title}</h4>
+                      <h4 className="font-semibold text-foreground font-title">{title}</h4>
                       <p className="text-muted-foreground text-sm">{description}</p>
                     </div>
                   </div>
@@ -116,7 +117,7 @@ const InsightsSection = () => {
         <h2 className="text-2xl font-semibold text-foreground font-serif">Character Thoughts and Reflections</h2>
         <Card className="border-l-4 border-l-purple-500 bg-slate-800/30 border-slate-700/50">
           <CardHeader>
-            <CardTitle className="flex items-center space-x-2 text-foreground font-serif">
+            <CardTitle className="flex items-center space-x-2 text-foreground font-title">
               <Brain className="h-5 w-5 text-purple-400" />
               <span>Access Character Reflections</span>
             </CardTitle>
@@ -150,7 +151,7 @@ const InsightsSection = () => {
             <div className="flex items-start space-x-4">
               <Search className="h-8 w-8 text-orange-400 flex-shrink-0" />
               <div>
-                <h3 className="font-semibold text-foreground mb-2 font-serif">Powerful Search Capabilities</h3>
+                <h3 className="font-semibold text-foreground mb-2 font-title">Powerful Search Capabilities</h3>
                 <p className="text-muted-foreground mb-4">
                   Search through character memories to find specific conversations, events, or topics. 
                   This powerful feature allows you to:
@@ -176,7 +177,7 @@ const InsightsSection = () => {
             <div className="flex items-start space-x-4">
               <Heart className="h-8 w-8 text-pink-400 flex-shrink-0" />
               <div>
-                <h3 className="font-semibold text-foreground mb-2 font-serif">Relationship Analytics</h3>
+                <h3 className="font-semibold text-foreground mb-2 font-title">Relationship Analytics</h3>
                 <p className="text-muted-foreground mb-4">
                   View detailed relationship dynamics between characters and users, including:
                 </p>
@@ -195,7 +196,7 @@ const InsightsSection = () => {
       </div>
 
       <div className="bg-gradient-to-r from-blue-500/20 to-indigo-500/20 border border-blue-500/30 rounded-lg p-6">
-        <h3 className="font-semibold text-blue-400 mb-2 font-serif">Understanding Character Development</h3>
+        <h3 className="font-semibold text-blue-400 mb-2 font-title">Understanding Character Development</h3>
         <p className="text-blue-300 mb-3">
           The insights system provides unprecedented visibility into how AI characters think, feel, and grow. 
           By understanding these patterns, you can:
@@ -212,3 +213,4 @@ const InsightsSection = () => {
 };
 
 export default InsightsSection;
+

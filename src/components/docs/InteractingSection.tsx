@@ -1,4 +1,5 @@
 
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Alert, AlertDescription } from "@/components/ui/alert";
@@ -36,9 +37,9 @@ const InteractingSection = () => {
             <div className="flex items-start space-x-4">
               <MessageCircle className="h-8 w-8 text-green-400 flex-shrink-0" />
               <div>
-                <h3 className="font-semibold text-foreground mb-2 font-serif">Natural Communication</h3>
+                <h3 className="font-semibold text-foreground mb-2 font-title">Natural Communication</h3>
                 <p className="text-muted-foreground">
-                  Simply ping your bot in any channel where your character bot is present or message them in DMs. The character will 
+                  Simply send messages in any channel where your character bot is present. The character will 
                   respond based on their personality, memory of previous interactions, and the current context 
                   of the conversation.
                 </p>
@@ -68,7 +69,7 @@ const InteractingSection = () => {
         <h2 className="text-2xl font-semibold text-foreground font-serif">Multi-Character Interactions</h2>
         <Card className="border-l-4 border-l-purple-500 bg-slate-800/30 border-slate-700/50">
           <CardHeader>
-            <CardTitle className="flex items-center space-x-2 text-foreground font-serif">
+            <CardTitle className="flex items-center space-x-2 text-foreground font-title">
               <Users className="h-5 w-5 text-purple-400" />
               <span>Group Conversations</span>
             </CardTitle>
@@ -97,7 +98,7 @@ const InteractingSection = () => {
             <div className="flex items-start space-x-4">
               <RefreshCw className="h-8 w-8 text-orange-400 flex-shrink-0" />
               <div>
-                <h3 className="font-semibold text-foreground mb-2 font-serif">Alternative Responses</h3>
+                <h3 className="font-semibold text-foreground mb-2 font-title">Alternative Responses</h3>
                 <p className="text-muted-foreground mb-3">
                   If you're not satisfied with a character's response, you can use the regenerate button 
                   that appears after each message to get an alternative response.
@@ -127,7 +128,7 @@ const InteractingSection = () => {
             <div className="flex items-start space-x-4">
               <User className="h-8 w-8 text-indigo-400 flex-shrink-0" />
               <div>
-                <h3 className="font-semibold text-foreground mb-2 font-serif">Channel-Specific Identity</h3>
+                <h3 className="font-semibold text-foreground mb-2 font-title">Channel-Specific Identity</h3>
                 <p className="text-muted-foreground">
                   Your persona can be different in each channel, allowing you to play different roles or 
                   characters across various roleplay scenarios. Characters will remember and reference 
@@ -140,7 +141,7 @@ const InteractingSection = () => {
       </div>
 
       <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-lg p-6">
-        <h3 className="font-semibold text-green-400 mb-2 font-serif">Tips for Great Interactions</h3>
+        <h3 className="font-semibold text-green-400 mb-2 font-title">Tips for Great Interactions</h3>
         <ul className="text-green-300 space-y-1">
           <li>• Be descriptive in your messages to encourage detailed responses</li>
           <li>• Reference past conversations to see character memory in action</li>
@@ -154,3 +155,4 @@ const InteractingSection = () => {
 };
 
 export default InteractingSection;
+

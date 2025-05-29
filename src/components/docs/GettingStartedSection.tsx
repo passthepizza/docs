@@ -1,4 +1,5 @@
 
+
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -67,7 +68,7 @@ const GettingStartedSection = () => {
         <h2 className="text-2xl font-semibold text-foreground font-serif">Prerequisites</h2>
         <Card className="bg-slate-800/30 border-slate-700/50">
           <CardHeader>
-            <CardTitle className="flex items-center space-x-2 text-foreground font-serif">
+            <CardTitle className="flex items-center space-x-2 text-foreground font-title">
               <CheckCircle className="h-5 w-5 text-green-400" />
               <span>What You'll Need</span>
             </CardTitle>
@@ -96,7 +97,7 @@ const GettingStartedSection = () => {
                     {step.step}
                   </Badge>
                   <div className="flex-1">
-                    <h3 className="font-semibold text-foreground mb-2 flex items-center space-x-2 font-serif">
+                    <h3 className="font-semibold text-foreground mb-2 flex items-center space-x-2 font-title">
                       <span>{step.title}</span>
                       {step.link && (
                         <a 
@@ -139,7 +140,7 @@ const GettingStartedSection = () => {
       </Alert>
 
       <div className="bg-gradient-to-r from-primary/20 to-accent/20 border border-primary/30 rounded-lg p-6">
-        <h3 className="font-semibold text-primary mb-2 font-serif">Ready to Create Your First Character?</h3>
+        <h3 className="font-semibold text-primary mb-2 font-title">Ready to Create Your First Character?</h3>
         <p className="text-muted-foreground">
           Once you have your bot token ready, you can begin the character creation process by 
           messaging the NarrativAI main bot directly. The process is guided and user-friendly!
@@ -150,3 +151,4 @@ const GettingStartedSection = () => {
 };
 
 export default GettingStartedSection;
+

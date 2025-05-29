@@ -1,4 +1,5 @@
 
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Zap, Brain, RefreshCw, BarChart3, Database, Bot, Terminal } from "lucide-react";
@@ -44,7 +45,7 @@ const AdvancedFeaturesSection = () => {
         <div className="grid gap-6">
           <Card className="border-l-4 border-l-blue-500 bg-slate-800/30 border-slate-700/50">
             <CardHeader>
-              <CardTitle className="flex items-center space-x-2 text-foreground font-serif">
+              <CardTitle className="flex items-center space-x-2 text-foreground font-title">
                 <BarChart3 className="h-5 w-5 text-blue-400" />
                 <span>Memory Statistics</span>
               </CardTitle>
@@ -66,7 +67,7 @@ const AdvancedFeaturesSection = () => {
 
           <Card className="border-l-4 border-l-green-500 bg-slate-800/30 border-slate-700/50">
             <CardHeader>
-              <CardTitle className="flex items-center space-x-2 text-foreground font-serif">
+              <CardTitle className="flex items-center space-x-2 text-foreground font-title">
                 <Brain className="h-5 w-5 text-green-400" />
                 <span>Memory Consolidation</span>
               </CardTitle>
@@ -91,7 +92,7 @@ const AdvancedFeaturesSection = () => {
               <div className="flex items-start space-x-4">
                 <RefreshCw className="h-8 w-8 text-purple-400 flex-shrink-0" />
                 <div>
-                  <h3 className="font-semibold text-foreground mb-2 font-serif">Health Checks</h3>
+                  <h3 className="font-semibold text-foreground mb-2 font-title">Health Checks</h3>
                   <p className="text-muted-foreground">
                     Verify memory system integrity and performance to ensure optimal character functionality. 
                     Regular health checks help maintain consistent character behavior and response quality.
@@ -119,7 +120,7 @@ const AdvancedFeaturesSection = () => {
             <div className="flex items-start space-x-4">
               <Bot className="h-8 w-8 text-orange-400 flex-shrink-0" />
               <div>
-                <h3 className="font-semibold text-foreground mb-2 font-serif">System Synchronization</h3>
+                <h3 className="font-semibold text-foreground mb-2 font-title">System Synchronization</h3>
                 <p className="text-muted-foreground">
                   The refresh command updates NarrativAI's internal registry of all character bots present 
                   in your server. This is particularly useful after adding new bots or when characters 
@@ -135,7 +136,7 @@ const AdvancedFeaturesSection = () => {
         <h2 className="text-2xl font-semibold text-foreground font-serif">Data Management</h2>
         <Card className="border-l-4 border-l-red-500 bg-slate-800/30 border-slate-700/50">
           <CardHeader>
-            <CardTitle className="flex items-center space-x-2 text-foreground font-serif">
+            <CardTitle className="flex items-center space-x-2 text-foreground font-title">
               <Database className="h-5 w-5 text-red-400" />
               <span>Comprehensive Data Control</span>
             </CardTitle>
@@ -149,7 +150,7 @@ const AdvancedFeaturesSection = () => {
                 const [title, description] = option.split(': ');
                 return (
                   <div key={index} className="bg-red-500/20 border border-red-500/30 rounded-lg p-4">
-                    <h4 className="font-semibold text-red-400 mb-2 font-serif">{title}</h4>
+                    <h4 className="font-semibold text-red-400 mb-2 font-title">{title}</h4>
                     <p className="text-red-300 text-sm">{description}</p>
                   </div>
                 );
@@ -158,76 +159,9 @@ const AdvancedFeaturesSection = () => {
           </CardContent>
         </Card>
       </div>
-
-      <div className="grid gap-6 md:grid-cols-2">
-        <Card className="border-l-4 border-l-indigo-500 bg-slate-800/30 border-slate-700/50">
-          <CardHeader>
-            <CardTitle className="text-indigo-400 font-serif">Performance Optimization</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ul className="space-y-2 text-sm">
-              <li className="flex items-start space-x-2">
-                <div className="flex-shrink-0 w-1.5 h-1.5 bg-indigo-400 rounded-full mt-2"></div>
-                <span className="text-indigo-300">Regular memory consolidation</span>
-              </li>
-              <li className="flex items-start space-x-2">
-                <div className="flex-shrink-0 w-1.5 h-1.5 bg-indigo-400 rounded-full mt-2"></div>
-                <span className="text-indigo-300">System health monitoring</span>
-              </li>
-              <li className="flex items-start space-x-2">
-                <div className="flex-shrink-0 w-1.5 h-1.5 bg-indigo-400 rounded-full mt-2"></div>
-                <span className="text-indigo-300">Bot synchronization</span>
-              </li>
-              <li className="flex items-start space-x-2">
-                <div className="flex-shrink-0 w-1.5 h-1.5 bg-indigo-400 rounded-full mt-2"></div>
-                <span className="text-indigo-300">Memory usage tracking</span>
-              </li>
-            </ul>
-          </CardContent>
-        </Card>
-
-        <Card className="border-l-4 border-l-teal-500 bg-slate-800/30 border-slate-700/50">
-          <CardHeader>
-            <CardTitle className="text-teal-400 font-serif">Best Practices</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <ul className="space-y-2 text-sm">
-              <li className="flex items-start space-x-2">
-                <div className="flex-shrink-0 w-1.5 h-1.5 bg-teal-400 rounded-full mt-2"></div>
-                <span className="text-teal-300">Monitor memory statistics regularly</span>
-              </li>
-              <li className="flex items-start space-x-2">
-                <div className="flex-shrink-0 w-1.5 h-1.5 bg-teal-400 rounded-full mt-2"></div>
-                <span className="text-teal-300">Run health checks after major changes</span>
-              </li>
-              <li className="flex items-start space-x-2">
-                <div className="flex-shrink-0 w-1.5 h-1.5 bg-teal-400 rounded-full mt-2"></div>
-                <span className="text-teal-300">Backup data before clearing</span>
-              </li>
-              <li className="flex items-start space-x-2">
-                <div className="flex-shrink-0 w-1.5 h-1.5 bg-teal-400 rounded-full mt-2"></div>
-                <span className="text-teal-300">Refresh bots after server changes</span>
-              </li>
-            </ul>
-          </CardContent>
-        </Card>
-      </div>
-
-      <div className="bg-gradient-to-r from-slate-500/20 to-gray-500/20 border border-slate-500/30 rounded-lg p-6">
-        <h3 className="font-semibold text-slate-300 mb-2 font-serif">Advanced Usage Tips</h3>
-        <p className="text-slate-400 mb-3">
-          These advanced features are designed for users who want fine-grained control over their character systems:
-        </p>
-        <ul className="text-slate-400 space-y-1">
-          <li>• Use memory statistics to understand character development patterns</li>
-          <li>• Schedule regular consolidation for optimal performance</li>
-          <li>• Monitor health checks to prevent system degradation</li>
-          <li>• Refresh bot detection when adding new characters to servers</li>
-          <li>• Create data backups before experimenting with major changes</li>
-        </ul>
-      </div>
     </div>
   );
 };
 
 export default AdvancedFeaturesSection;
+

@@ -1,4 +1,5 @@
 
+
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Bot, Brain, Users, Zap } from "lucide-react";
@@ -62,7 +63,7 @@ const IntroductionSection = () => {
                       <Icon className="h-8 w-8 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground mb-2 font-serif">{feature.title}</h3>
+                      <h3 className="font-semibold text-foreground mb-2 font-title">{feature.title}</h3>
                       <p className="text-muted-foreground">{feature.description}</p>
                     </div>
                   </div>
@@ -74,7 +75,7 @@ const IntroductionSection = () => {
       </div>
 
       <div className="glassmorphism border border-primary/30 p-6">
-        <h3 className="font-semibold text-primary mb-2 font-serif">What makes NarrativAI special?</h3>
+        <h3 className="font-semibold text-primary mb-2 font-title">What makes NarrativAI special?</h3>
         <p className="text-muted-foreground">
           Unlike traditional chatbots, NarrativAI characters develop genuine personalities, 
           form lasting memories, and create meaningful relationships with users. Each interaction 
@@ -86,3 +87,4 @@ const IntroductionSection = () => {
 };
 
 export default IntroductionSection;
+
